@@ -1,0 +1,77 @@
+@font-face {
+  font-family: PixelifySans-Regular;
+  src: url(../../font/PixelifySans-VariableFont_wght.ttf) format('truetype');
+}
+
+
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+.scene {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#bg {
+  position: absolute;
+  bottom: 0%; 
+  left: 0%;
+  width: 100vw;
+  height: 120vh;
+}
+
+#sir {
+  position: absolute;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  z-index: 10;
+  bottom: 10%;
+  left: 65%;
+  width: 20%;
+  height: 55%;
+}
+
+#box {
+  position: absolute;
+  display: none;
+  bottom: 34%;
+  right: 37%;
+  width: 30%;
+  height: 30%;
+  z-index: 15;
+}
+
+#text {
+  position: absolute;
+  top: 36.5%;
+  left: 35%;
+  width: 26%;
+  word-wrap: break-word;
+  overflow-y: auto;
+  border-width: 10cm;
+  border-top: 0cap; 
+  border: 10cm;
+  font-family: 'PixelifySans-Regular';
+  font: 'PixelifySans-Regular';
+  font-size: 1.2em;
+  color: black; 
+  z-index: 20;
+}
+
+
+#exit {
+  position: absolute;
+  background-color: transparent;
+  top: 10%;
+  right: 0%;
+  width: 42%;
+  height: 22%;
+  border: none;
+  cursor: pointer;
+  z-index: 20;
+}
