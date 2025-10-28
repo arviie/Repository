@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <title>Adventure at LaSci!</title>
+  <style>
+    @font-face {
+    font-family: PixelifySans-Regular;
+    src: url(font/PixelifySans-VariableFont_wght.ttf) format('truetype');
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      /*height: 100%;*/
+    }
+
+    .image-container {
+      position: relative;
+      width: 100vw;     /* Full viewport width */
+      height: 100vh;    /* Full viewport height */
+      overflow: hidden; /* Hide anything overflowing */
+    }
+
+    .image-container img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .hotspot {
+      position: absolute;
+      /*border: 2px solid rgba(255, 0, 0, 0.4);*/
+      cursor: pointer;
+    }
+
+    .overlay-top {
+      font-family: "PixelifySans-Regular";
+      position: absolute;
+      top: 0;
+      height: 18%;
+      width: 100%; /* change to 50% if width overlay width is 50% */
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: rgba(255, 255, 255, 0.15); /* transparent white */
+      color: white;
+      display: flex;
+      justify-content: center; /* horizontal centering */
+      align-items: center; /* vertical centering */
+      font-size: 24px;
+    }
+
+    .overlay-bottom {
+      font-family: "PixelifySans-Regular";
+      font-weight: normal;
+      position: absolute;
+      bottom: 0;
+      height: 5%;
+      width: 100%; /* change to 50% if width overlay width is 50% */
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: rgba(255, 255, 255, 0.15); /* transparent white */
+      color: white;
+      display: flex;
+      justify-content: center; /* horizontal centering */
+      align-items: center; /* vertical centering */
+      font-size: 16px;
+    }
+
+  </style>
+
+</head>
+<body>
+  <div class="image-container">
+    <img src="with-glow-doors.jpg" alt="school">
+
+    <!-- Rutherford -->
+    <a href="classrooms/Rutherford/rutherford.html" class="hotspot" style="top:53%; left:91.5%; width:3.15%; height:12%;"></a>
+
+    <!-- Einstein -->
+    <a href="classrooms/Einstein/einstein.html" class="hotspot" style="top:52%; left:28.5%; width:4.25%; height:12.5%;"></a>
+    <a href="classrooms/Einstein/einstein.html" class="hotspot" style="top:51%; left:45.55%; width:3.75%; height:10%;"></a>
+
+    <!-- Dalton -->
+    <a href="classrooms/Dalton/dalton.html" class="hotspot" style="top:51%; left:53.55%; width:3.5%; height:10%;"></a>
+    <a href="classrooms/Dalton/dalton.html" class="hotspot" style="top:52%; left:70%; width:4.25%; height:12.5%;"></a>
+
+    <!-- Hertz -->
+    <a href="classrooms/Hertz/hertz.html" class="hotspot" style="top:53%; left:8.2%; width:3.15%; height:12%;"></a>
+  </div>
+
+  <div class="overlay-top">
+    Adventure at LaSci
+  </div>
+
+  <div class="overlay-bottom">
+    tip: visit the classrooms!
+  </div>
+
+</body>
+</html>
